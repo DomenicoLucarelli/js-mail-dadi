@@ -44,7 +44,7 @@ header{
 }
 
 
-#log , #generator{
+#log , #generator ,#reset{
 
     border: none;
     text-align: center;

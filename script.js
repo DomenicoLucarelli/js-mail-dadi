@@ -117,22 +117,23 @@ diceFaces[5].src = 'img/dice-six-solid.svg';
 
 let generatorEl = document.getElementById("generator");
 
+let userImageEl = document.getElementById("user-image");
+
+let computerImageEl = document.getElementById("computer-image");
+
+let userNumber
+let computerNumber
+
 generatorEl.addEventListener("click" , function(){
 
-    let userNumber = Math.floor(Math.random() * 6  );
+    userNumber = Math.floor(Math.random() * 6  );
     
-    let computerNumber = Math.floor(Math.random() * 6 );
+    computerNumber = Math.floor(Math.random() * 6 );
 
-    let userImageEl = document.getElementById("user-image");
+    userImageEl.appendChild(diceFaces[userNumber]);
 
-    userImageEl.appendChild(diceFaces[userNumber])
+    computerImageEl.appendChild(diceFaces[computerNumber]);
     
-
-    let computerImageEl = document.getElementById("computer-image");
-
-    computerImageEl.appendChild(diceFaces[computerNumber])
-    
-
     let resultEl = document.getElementById("result");
 
     if(userNumber > computerNumber){
@@ -152,7 +153,21 @@ generatorEl.addEventListener("click" , function(){
         
             }
 
-})       
+})  
+    
+
+
+
+
+let resetEl = document.getElementById("reset");
+
+resetEl.addEventListener("click" , function(){
+
+    diceFaces[userNumber].remove() 
+    diceFaces[computerNumber].remove()
+
+
+})
 
 
 
