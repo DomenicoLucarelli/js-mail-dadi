@@ -5,17 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <form>
+    <header>
+        <h1>Diced Game</h1>
+    </header>
+
+    <div id="container">
 
         <label for="user-email">Inserisci la tua Mail</label>
         <input type="text" id="user-email">
 
         <button id="log">Log In</button>
+        
+        <section id="welcome-text"></section>
+        
+    </div>
 
-    </form>
+        <section id="game">
+
+            <h2>TENTA LA FORTUNA</h2>
+
+            <button id="generator">Genera numeri</button>
+
+            <div class="cards">
+
+                <div id="user-image"></div>
+                <div id="computer-image"></div>
+
+            </div>
+
+            <section id="result"></section>
+            
+        </section>
+            
+
+
     
 
 

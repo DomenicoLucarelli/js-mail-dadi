@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #1d3557;
+}
+
+#game{
+
+    display: none;
+}
+
+header{
+    text-align: center;
+    margin: 10px 0;
+
+    color: white;
+    font-weight: bold;
+}
+
+#container{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 500px;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 5px;
+
+    background-color: #457b9d;
+
+}
+
+#container label , h2{
+    color: white;
+}
+
+
+#log , #generator{
+
+    border: none;
+    text-align: center;
+    height: 26px;
+    padding: 10px;
+    line-height: 0;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#user-email{
+    border: none;
+    padding: 5px;
+
+    border-radius: 3px;
+}
+
+#game{
+    display: flex;
+    max-width: 800px;
+    
+    margin: 20px auto;
+    padding: 10px 0;
+
+    background-color: #e63946;
+
+    
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.cards{
+
+    display: flex;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+
+#user-image, #computer-image{
+
+    width: 100px;
+    height: 100px;
+
+    background-color: #e63946;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+#result{
+    font-size: 40px;
+    color: white;
+
+    font-weight: bold;
+}
