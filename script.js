@@ -21,6 +21,7 @@ let userEmailEl;
 logEl.addEventListener("click" , function() {
 
     userEmailEl = document.getElementById("user-email").value;
+    let gameEl = document.getElementById("game");
 
     let i;
 
@@ -38,13 +39,9 @@ logEl.addEventListener("click" , function() {
 
             welcomeTextEl.style.fontSize=("20px")
 
-          
-
-            
-
             i = emails.length;
 
-            let gameEl = document.getElementById("game");
+            
 
             gameEl.style.display = ("flex");
 
@@ -54,6 +51,7 @@ logEl.addEventListener("click" , function() {
 
     if(i == emails.length){
 
+       gameEl.style.display = ("none");
        alert("non sei registrato");
     }
 
